@@ -89,7 +89,7 @@ function favouriteFruit(theme) {
 }
 
 function submit() {
-    if (document.getElementById("input").value !== ""){
+    if (document.getElementById("input").value !== "" && document.getElementById("input").value != firstName && document.getElementById("input").value != secondName && document.getElementById("input").value != thirdName){
         firstName = secondName
         secondName = thirdName
         thirdName = document.getElementById("input").value
@@ -97,5 +97,3 @@ function submit() {
 
     document.getElementById("display").innerText = "The last 3 visitors have been " + firstName + ", " + secondName + ", and " + thirdName + ". Thank you for coming!"
 }
-
-window.onload = submit
