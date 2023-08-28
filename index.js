@@ -94,6 +94,8 @@ function submit() {
         secondName = thirdName
         thirdName = document.getElementById("input").value
     }
-
+    
     document.getElementById("display").innerText = "The last 3 visitors have been " + firstName + ", " + secondName + ", and " + thirdName + ". Thank you for coming!"
 }
+
+window.onload = submit
