@@ -13,7 +13,9 @@ favouriteMode("dark")
 // sharp, soft, round
 favouriteEdgeStyle("soft")
 
-
+let firstName = "Martin Pei"
+let secondName = "Walaa Moursi"
+let thirdName = "Xiaobu Yuan"
 
 ////////////////////////////////////
 // IGONE THE CODE BELOW THIS LINE //
@@ -86,4 +88,14 @@ function favouriteFruit(theme) {
     } 
 }
 
+function submit() {
+    if (document.getElementById("input").value !== ""){
+        firstName = secondName
+        secondName = thirdName
+        thirdName = document.getElementById("input").value
+    }
 
+    document.getElementById("display").innerText = "The last 3 visitors have been " + firstName + ", " + secondName + ", and " + thirdName + ". Thank you for coming!"
+}
+
+window.onload = submit

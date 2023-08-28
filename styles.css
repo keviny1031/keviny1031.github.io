@@ -22,7 +22,6 @@
     --dark: var(--text);
 }
 
-
 body, html {
     margin: 0;
     padding: 10px;
@@ -42,7 +41,7 @@ a {
 }
 
 input {
-    display: block;
+    display: inline;
     margin: 20px 0 0;
     width: 160px;
     box-sizing: border-box;
@@ -68,9 +67,14 @@ button {
     color: var(--background);
     font-weight: bold;
     box-sizing: border-box;
-    display: block;
+    display: inline;
     margin: 8px 0;
     cursor: pointer;
     font-family: var(--font);
     width: 160px;
+}
+
+button:hover {
+    background: black;
+    color: beige;
 }
